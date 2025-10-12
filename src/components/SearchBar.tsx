@@ -6,7 +6,7 @@ import { useState } from 'react'
 
 interface SearchBarProps {
   onSearch: (query: string) => void
-  onFilterChange: (filters: any) => void
+  onFilterChange: (filters: { category?: string; duration?: string; sortBy?: string }) => void
 }
 
 export function SearchBar({ onSearch, onFilterChange }: SearchBarProps) {
